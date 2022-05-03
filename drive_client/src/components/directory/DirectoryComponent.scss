@@ -1,0 +1,19 @@
+.directory_container {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+@media screen and (min-width: 601px) and (max-width: 850px) {
+  .directory_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .directory_container {
+    display: block;
+  }
+}

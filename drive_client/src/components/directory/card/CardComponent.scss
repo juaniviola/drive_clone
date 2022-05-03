@@ -1,0 +1,83 @@
+.card_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #f1f3f4;
+  border-radius: 6px;
+  margin: 0 5% 3% 0;
+
+  &:hover {
+    background-color: #e0e3e4;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    .dropdown_content {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: #f1f3f4;
+      border-radius: 6px;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 6px 10px;
+      z-index: 1;
+      right: 0;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f1f3f4;
+      }
+
+      button, a {
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        padding: 10px;
+        border: none;
+        background-color: transparent;
+        font-size: .8em;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 10%;
+
+        &:hover {
+          background-color: #d6d6d6;
+        }
+      }
+    }
+  }
+
+  img {
+    margin: 0 10px;
+    position: relative;
+    bottom: -5px;
+
+    &:last-child {
+      margin-left: 30px;
+      margin-right: 0;
+      cursor: pointer;
+    }
+  }
+
+  span {
+    margin: 0 10px;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card_container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

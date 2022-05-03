@@ -1,0 +1,19 @@
+.toast {
+  z-index: 2;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  min-height: 50px;
+  min-width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.white { color: white; }
+.error { background-color: rgb(214, 58, 58); }
+.warning { background-color: rgb(207, 207, 103); }
+.info, .loading { background-color: rgb(94, 216, 216); }

@@ -1,0 +1,17 @@
+Api
+
+# endpoint definition
+### auth
+POST /auth => (key) -> token (needed for all the other paths);
+
+### files
+POST /files/save => (file, filePath) -> OK; save file in filePath
+GET /files/download => (query: filePath) -> File; download file stored in filePath
+
+### folders
+POST /folders/create => (path, folderName) -> OK; creates a folder called folderName in path
+GET /folders/download => (query: folderPath) -> .zip; download folder zipped
+
+### all
+GET /showdir => (query: filePath) -> directory; get files and folders of path
+POST /delete => (path) -> OK; deletes file or folder
